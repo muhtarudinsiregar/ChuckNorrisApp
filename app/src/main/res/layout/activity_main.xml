@@ -6,21 +6,27 @@
     android:layout_height="match_parent"
     android:background="@drawable/image_1"
     tools:context="com.example.ardin.chucknorrisjokeandroid.MainActivity">
-    
+
     <com.github.library.bubbleview.BubbleTextView
         android:id="@+id/textJoke"
-        android:visibility="invisible"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:arrowWidth="8dp"
-        app:arrowHeight="8dp"
-        app:arrowPosition="14dp"
-        app:arrowLocation="top"
-        app:arrowCenter="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:visibility="invisible"
         app:angle="8dp"
-        app:bubleColor="#7EC0EE"
-        android:padding="10dp"/>
-    
+        app:arrowCenter="true"
+        app:arrowHeight="8dp"
+        app:arrowLocation="top"
+        app:arrowPosition="14dp"
+        app:arrowWidth="8dp"
+        app:bubleColor="#7EC0EE" />
+
+    <Button
+        android:id="@+id/buttonJoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/joke" />
 
 </RelativeLayout>
